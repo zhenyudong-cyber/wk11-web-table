@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wk 11 Web Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Weekly 24-Hour Schedule</h1>
+        <p>Complete breakdown of daily routines, classes, work, and rest across 7 days.</p>
+    </header>
+
+    <main>
+        <table>
+            <caption>Weekly Time (Monday – Sunday)</caption>
+            
+            <colgroup>
+                <col class="time-col">
+                <col span="5" class="weekday-col">
+                <col span="2" class="weekend-col">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Monday</th>
+                    <th scope="col">Tuesday</th>
+                    <th scope="col">Wednesday</th>
+                    <th scope="col">Thursday</th>
+                    <th scope="col">Friday</th>
+                    <th scope="col">Saturday</th>
+                    <th scope="col">Sunday</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">10:00 PM – 6:00 AM</th>
+                    <td colspan="7" class="sleep">Deep Sleep &amp; Recovery (6 Hours)</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">6:00 AM – 7:00 AM</th>
+                    <td class="routine">Wake up, Shower &amp; Breakfast</td>
+                    <td class="routine">Wake up, Shower &amp; Breakfast</td>
+                    <td class="routine">Wake up, Shower &amp; Breakfast</td>
+                    <td class="routine">Wake up, Shower &amp; Breakfast</td>
+                    <td class="routine">Wake up, Shower &amp; Breakfast</td>
+                    <td rowspan="2" class="sleep">Sleeping In</td>
+                    <td rowspan="2" class="sleep">Sleeping In</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8:00 AM</th>
+                    <td class="commute">Going to School</td>
+                    <td class="commute">Going to School</td>
+                    <td class="commute">Going to School</td>
+                    <td class="commute">Going to School</td>
+                    <td class="commute">No Class</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8:00 AM – 12:00 PM</th>
+                    <td class="school">Financial Accouting</td>
+                    <td class="work">Study Hall</td>
+                    <td class="school">Study Hall</td>
+                    <td class="work">Study Hall</td>
+                    <td class="school">No Class </td>
+                    <td class="routine">Breakfast &amp; House Chores</td>
+                    <td class="routine">Morning Walk &amp; Meal Prep</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">12:00 PM – 1:00 PM</th>
+                    <td colspan="5" class="routine">Lunch Break &amp; Campus Walk</td>
+                    <td colspan="2" class="routine">Weekend Lunch at home</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">1:00 PM – 5:00 PM</th>
+                    <td class="school">Intermidiate Algebra class</td>
+                    <td class="school">Intro to Business Lecture</td>
+                    <td class="school">Intermidiate Algebra class</td>
+                    <td class="school">Web Design Programming Lecture</td>
+                    <td class="study">Study</td>
+                    <td class="leisure">Hanging out</td>
+                    <td class="study">Weekly Review &amp; Assignment Prep</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5:00 PM – 6:00 PM</th>
+                    <td class="commute">Commute Home &amp; Workout</td>
+                    <td class="commute">Commute Home &amp; Gym</td>
+                    <td class="commute">Commute Home &amp; Workout</td>
+                    <td class="commute">Commute Home &amp; Gym</td>
+                    <td class="leisure">Evening Run &amp; Decompress</td>
+                    <td rowspan="2" class="leisure">Dinner &amp; Socializing</td>
+                    <td class="routine">Cook Family Dinner</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">6:00 PM – 8:00 PM</th>
+                    <td class="routine">Dinner &amp; Kitchen Cleanup</td>
+                    <td class="routine">Dinner &amp; Kitchen Cleanup</td>
+                    <td class="routine">Dinner &amp; Kitchen Cleanup</td>
+                    <td class="routine">Dinner &amp; Kitchen Cleanup</td>
+                    <td class="routine">Dinner &amp; Watching TV</td>
+                    <!-- Saturday covered by rowspan above -->
+                    <td class="routine">Dinner &amp; Clean Up</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8:00 PM – 10:00 PM</th>
+                    <td class="study">Coding Practice &amp; Readings</td>
+                    <td class="study">Study</td>
+                    <td class="study">Coding Practice &amp; Readings</td>
+                    <td class="study">Studying</td>
+                    <td class="leisure">Relaxing</td>
+                    <td class="leisure">Board Games / Relaxing</td>
+                    <td class="study">Pack Bag &amp; Plan Monday</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">10:00 PM – 12:00 AM</th>
+                    <td colspan="5" class="sleep">Bedtime Prep &amp; Lights Out (2 Hours)</td>
+                    <td colspan="2" class="leisure"> Bedtime Prep</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Total Hours</th>
+                    <td>24 Hours</td>
+                    <td>24 Hours</td>
+                    <td>24 Hours</td>
+                    <td>24 Hours</td>
+                    <td>24 Hours</td>
+                    <td>24 Hours</td>
+                    <td>24 Hours</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+</body>
+</html>
